@@ -44,7 +44,8 @@ let package = Package(
         .target(
             name: "BrowserInterop",
             dependencies: [
-                .product(name: "JavaScriptKit", package: "JavaScriptKit")
+                .product(name: "JavaScriptKit", package: "JavaScriptKit"),
+                .product(name: "JavaScriptEventLoop", package: "JavaScriptKit"),
             ],
             exclude: [
                 "bridge-js.config.json",
